@@ -23,6 +23,8 @@ class TodoCreate extends Component
 
         Todo::create($new_todo);
 
+        $this->reset('title');
+
         $this->dispatch('todo-created', ['todo', $new_todo]);
     }
 }
