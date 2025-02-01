@@ -16,11 +16,13 @@ class TodoCreate extends Component
 
     public function create_todo()
     {
-        Todo::create([
+        $new_todo = [
             'title' => $this->title,
             'complete' => 0
-        ]);
+        ];
 
-        $this->dispatch('todo-created', ['title', $this->title]);
+        Todo::create($new_todo);
+
+        $this->dispatch('todo-created', ['todo', $new_todo]);
     }
 }

@@ -19,8 +19,8 @@ class TodoList extends Component
     }
 
     #[On('todo-created')] 
-    public function add_new_todo($title)
+    public function add_new_todo($todo)
     {
-        $this->todos_incomplete->push(['title' => $title, 'complete' => 0]);
+        $this->todos_incomplete->push($todo);
     }
 }
