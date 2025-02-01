@@ -5,6 +5,7 @@
         <div wire:key="{{$todo->id}}">
             <p>{{ $todo->title }}</p>
             <input type="checkbox" wire:click="mark_complete({{ $todo->id }}, {{ true }})"/>
+            <button wire:click="delete_todo({{ $todo->id }})">Delete</a>
         </div>
     @endforeach
 
@@ -13,6 +14,7 @@
         <div wire:key="{{$todo->id}}">
             <p>{{ $todo->title }}</p>
             <input type="checkbox" checked wire:click="mark_complete({{ $todo->id }}, {{ 0 }})"/>
+            <button wire:click="delete_todo({{ $todo->id }})">Delete</a>
         </div>
     @endforeach
 
