@@ -25,4 +25,10 @@ h2, h3 {
 
 main {
     background: $colour_white;
+
+    .content {
+        width: 70%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
 }
