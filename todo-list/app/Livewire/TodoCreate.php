@@ -20,5 +20,7 @@ class TodoCreate extends Component
             'title' => $this->title,
             'complete' => 0
         ]);
+
+        $this->dispatch('todo-created', ['title', $this->title]);
     }
 }
