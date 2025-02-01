@@ -1,3 +1,27 @@
-body {
+$colour_purple: #8b60ac;
+$colour_purple_dark: #744a94;
+$colour_white: #f0f0f0;
+
+html, body {
     background: coral;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header, h1 {
+    background: linear-gradient($colour_purple 0%, $colour_purple_dark 100%);
+    color: white;
+    margin: 0;
+    padding: 0.6em;
+    text-align: center;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0.6em;
+}
+
+main {
+    background: $colour_white;
 }

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ifaDASH Todo List</title>
     @vite('resources/scss/app.scss')
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,7 +16,7 @@
     </header>
 
     <main>
-        <h1>@yield('header')</h1>
+        <h2>@yield('header')</h2>
         <div>
             @yield('content')
         </div>
