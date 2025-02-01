@@ -16,7 +16,6 @@
     </header>
 
     <main>
-        <h2>@yield('header')</h2>
         <div>
             @yield('content')
         </div>

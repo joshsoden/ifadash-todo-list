@@ -3,10 +3,11 @@ $colour_purple_dark: #744a94;
 $colour_white: #f0f0f0;
 
 html, body {
-    background: coral;
+    background: $colour_white;
     font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 }
 
 header, h1 {
