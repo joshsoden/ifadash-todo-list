@@ -8,9 +8,15 @@
     @vite('resources/scss/app.scss')
 </head>
 <body>
-    <h1>@yield('title')</h1>
-    <div>
-        @yield('content')
-    </div>
+    <header>
+        <h1>Lovely ifaDASH Todo List</h1>
+    </header>
+
+    <main>
+        <h1>@yield('header')</h1>
+        <div>
+            @yield('content')
+        </div>
+    </main>
 </body>
 </html>
