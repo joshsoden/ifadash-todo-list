@@ -3,6 +3,6 @@
 @section('header', "Your current todos")
 
 @section('content')
-    <p>Content section test</p>
+    @livewire('todo-create')
     @livewire('todo-list')
 @endsection
