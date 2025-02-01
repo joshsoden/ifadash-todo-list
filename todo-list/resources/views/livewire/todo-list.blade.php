@@ -9,7 +9,7 @@
         </div>
     @endforeach
 
-    <h2>Already done:</h2>
+    <h3>Already done:</h3>
     @foreach($todos_complete as $todo)
         <div wire:key="{{$todo->id}}">
             <p>{{ $todo->title }}</p>
