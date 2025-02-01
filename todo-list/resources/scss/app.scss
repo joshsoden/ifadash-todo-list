@@ -1,13 +1,17 @@
 $colour_purple: #8b60ac;
 $colour_purple_dark: #744a94;
 $colour_white: #f0f0f0;
+$colour_white_dark: #e7e7e7;
 
 html, body {
     background: $colour_white;
-    font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
     min-height: 100vh;
+}
+
+html, body, input {
+    font-family: "Montserrat", sans-serif;
 }
 
 header, h1 {
@@ -30,5 +34,17 @@ main {
         width: 70%;
         max-width: 900px;
         margin: 0 auto;
+    }
+
+    .todo {
+        background: $colour_white_dark;
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
     }
 }
