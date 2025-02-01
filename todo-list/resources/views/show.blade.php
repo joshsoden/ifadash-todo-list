@@ -4,4 +4,5 @@
 
 @section('content')
     <p>Content section test</p>
+    @livewire('todo-list')
 @endsection
