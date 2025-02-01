@@ -26,6 +26,12 @@ class TodoList extends Component
         $todo->save();
     }
 
+    public function delete_todo($id)
+    {
+        $todo = Todo::find($id);
+        $todo->delete();
+    }
+
     #[On('todo-created')] 
     public function add_new_todo($todo)
     {
