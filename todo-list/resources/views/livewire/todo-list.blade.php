@@ -1,3 +1,6 @@
 <div>
-    <p>List of todos here</p>
+    @foreach($todos as $todo)
+        <p>{{ $todo->title }}</p>
+        <input type="checkbox"/>
+    @endforeach
 </div>
