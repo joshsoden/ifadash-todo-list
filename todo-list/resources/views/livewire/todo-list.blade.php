@@ -1,11 +1,15 @@
 <div>
-    @foreach($todos as $todo)
+    <h3>To do:</h3>
+    @foreach($todos_incomplete as $todo)
         <p>{{ $todo->title }}</p>
-
-        @if ($todo->complete)
-            <input type="checkbox" checked/>
-        @else
-            <input type="checkbox"/>
-        @endif
+        <input type="checkbox"/>
     @endforeach
+
+
+    <h2>Already done:</h2>
+    @foreach($todos_complete as $todo)
+        <p>{{ $todo->title }}</p>
+        <input type="checkbox" checked/>
+    @endforeach
+
 </div>
