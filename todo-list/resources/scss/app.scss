@@ -46,5 +46,15 @@ main {
         p {
             margin: 0;
         }
+
+        .material-symbols-outlined {
+            font-size: 32px;
+            cursor: pointer;
+
+            &:hover {
+                color: $colour_purple;
+                opacity: 0.5;
+            }
+        }
     }
 }
