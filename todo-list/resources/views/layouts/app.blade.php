@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <h1>Lovely ifaDASH Todo List</h1>
+        <h1>ifaDASH Todo List</h1>
     </header>
 
     <main>
