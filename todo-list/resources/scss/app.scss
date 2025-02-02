@@ -2,6 +2,7 @@ $colour_purple: #8b60ac;
 $colour_purple_dark: #744a94;
 $colour_white: #f0f0f0;
 $colour_white_dark: #e7e7e7;
+$colour_white_darker: rgb(210, 209, 209);
 $colour_red: #c14545;
 $colour_red_light: #d77272;
 $colour_blue: #abbbca;
@@ -47,6 +48,16 @@ main {
         align-items: center;
         border-radius: 12px;
 
+        input {
+            padding: 8px;
+            font-size: 16px;
+            background: none;
+            border: 2px solid #888;
+            border-radius: 8px;
+            width: 100%;
+            margin-right: 24px;
+        }
+
         p {
             margin: 0;
             line-height: 32px;
@@ -83,5 +94,12 @@ main {
                 }
             }
         }
+    }
+
+    .divider {
+        width: 90%;
+        height: 2px;
+        background: $colour_white_darker;
+        margin: 36px auto;
     }
 }
