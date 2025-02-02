@@ -41,10 +41,11 @@ main {
 
     .todo {
         background: $colour_white_dark;
-        padding: 12px;
+        padding: 12px 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-radius: 12px;
 
         p {
             margin: 0;
@@ -55,17 +56,31 @@ main {
             background: $colour_blue;
         }
 
+        .delete {
+            opacity: 0;
+        }
+
+        &:hover {
+            .delete {
+                opacity: 1;
+            }
+        }
+
         .material-symbols-outlined {
             font-size: 32px;
             cursor: pointer;
 
             &:hover {
                 color: $colour_purple;
-                opacity: 0.5;
+                opacity: 0.8;
             }
 
             &.delete {
                 color: $colour_red;
+
+                &:hover {
+                    color: $colour_red_light;
+                }
             }
         }
     }
