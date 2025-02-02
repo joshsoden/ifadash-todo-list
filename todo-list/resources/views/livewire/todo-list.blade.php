@@ -1,7 +1,7 @@
 <div>
 
     <h3>To do:</h3>
-    @foreach($todos_incomplete as $todo)
+    @forelse($todos_incomplete as $todo)
         <div class="todo" wire:key="{{$todo->id}}">
             <p>{{ $todo->title }}</p>
             <div>
@@ -9,10 +9,14 @@
                 <span class="material-symbols-outlined delete" wire:click="delete_todo({{ $todo->id }})">delete</span>
             </div>
         </div>
-    @endforeach
+    @empty
+        <div class="todo empty">
+            <p>You haven't got any tasks - why not add one?</p>
+        </div>
+    @endforelse
 
     <h3>Already done:</h3>
-    @foreach($todos_complete as $todo)
+    @forelse($todos_complete as $todo)
         <div class="todo" wire:key="{{$todo->id}}">
             <p>{{ $todo->title }}</p>
             <div>
@@ -20,6 +24,10 @@
                 <span class="material-symbols-outlined delete" wire:click="delete_todo({{ $todo->id }})">delete</span>
             </div>
         </div>
-    @endforeach
+    @empty
+        <div class="todo empty">
+            <p>You haven't completed any tasks yet!</p>
+        </div>
+    @endforelse
 
 </div>

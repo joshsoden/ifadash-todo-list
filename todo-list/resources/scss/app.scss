@@ -4,6 +4,7 @@ $colour_white: #f0f0f0;
 $colour_white_dark: #e7e7e7;
 $colour_red: #c14545;
 $colour_red_light: #d77272;
+$colour_blue: #abbbca;
 
 html, body {
     background: $colour_white;
@@ -47,6 +48,11 @@ main {
 
         p {
             margin: 0;
+            line-height: 32px;
+        }
+
+        &.empty {
+            background: $colour_blue;
         }
 
         .material-symbols-outlined {
