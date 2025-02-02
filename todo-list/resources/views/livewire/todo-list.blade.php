@@ -5,8 +5,8 @@
         <div class="todo" wire:key="{{$todo->id}}">
             <p>{{ $todo->title }}</p>
             <div>
-                <span class="material-symbols-outlined checked" wire:click="mark_complete({{ $todo->id }}, {{ 1 }})">check_box_outline_blank</span>
-                <button class="delete" wire:click="delete_todo({{ $todo->id }})">Delete</a>
+                <span class="material-symbols-outlined" wire:click="mark_complete({{ $todo->id }}, {{ 1 }})">check_box_outline_blank</span>
+                <span class="material-symbols-outlined delete" wire:click="delete_todo({{ $todo->id }})">delete</span>
             </div>
         </div>
     @endforeach
@@ -17,7 +17,7 @@
             <p>{{ $todo->title }}</p>
             <div>
                 <span class="material-symbols-outlined" checked wire:click="mark_complete({{ $todo->id }}, {{ 0 }})">check_box</span>
-                <button class="delete" wire:click="delete_todo({{ $todo->id }})">Delete</a>
+                <span class="material-symbols-outlined delete" wire:click="delete_todo({{ $todo->id }})">delete</span>
             </div>
         </div>
     @endforeach

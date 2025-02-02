@@ -2,6 +2,8 @@ $colour_purple: #8b60ac;
 $colour_purple_dark: #744a94;
 $colour_white: #f0f0f0;
 $colour_white_dark: #e7e7e7;
+$colour_red: #c14545;
+$colour_red_light: #d77272;
 
 html, body {
     background: $colour_white;
@@ -54,6 +56,10 @@ main {
             &:hover {
                 color: $colour_purple;
                 opacity: 0.5;
+            }
+
+            &.delete {
+                color: $colour_red;
             }
         }
     }
